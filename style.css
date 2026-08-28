@@ -1,0 +1,214 @@
+/* =========================
+   USTAWIENIA CAŁEJ STRONY
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+
+    background-color: #d9d9d9;
+    color: #111111;
+}
+
+.page {
+    width: 100%;
+    padding: 70px 20px 100px;
+}
+
+
+/* =========================
+   TYTUŁ
+   ========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.years {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   ZDJĘCIE
+   ========================= */
+
+.photo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 55px;
+}
+
+.photo-section img {
+    width: 750px;
+    max-width: 92%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   GŁÓWNY KOMUNIKAT
+   ========================= */
+
+.message {
+    max-width: 900px;
+
+    margin: 0 auto 80px;
+    padding: 0 20px;
+
+    text-align: center;
+
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.message p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BIOGRAFIA
+   ========================= */
+
+.biography {
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 50px;
+
+    background-color: rgba(255, 255, 255, 0.35);
+
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+.biography h2 {
+    font-size: 40px;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.biography p {
+    margin-bottom: 28px;
+}
+
+
+/* LINKI */
+
+.biography a {
+    color: #222222;
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.biography a:hover {
+    color: #666666;
+}
+
+
+/* =========================
+   STOPKA
+   ========================= */
+
+.memorial-footer {
+    max-width: 900px;
+
+    margin: 90px auto 0;
+
+    text-align: center;
+}
+
+.line {
+    width: 120px;
+    height: 1px;
+
+    background-color: #555555;
+
+    margin: 0 auto 35px;
+}
+
+.motto {
+    font-size: 34px;
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+.footer-years {
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+
+/* =========================
+   TELEFON / MAŁY EKRAN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .page {
+        padding: 40px 15px 70px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .years {
+        font-size: 24px;
+    }
+
+    .hero {
+        margin-bottom: 40px;
+    }
+
+    .photo-section img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .message {
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    .biography {
+        padding: 30px 20px;
+
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .biography h2 {
+        font-size: 32px;
+    }
+
+    .motto {
+        font-size: 28px;
+    }
+}
